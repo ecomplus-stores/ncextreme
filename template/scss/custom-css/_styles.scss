@@ -1,1 +1,64 @@
 // Add your custom CSS here.
+.pag-1::before {
+    background: url(/img/uploads/pag-1.png);
+}
+.pag-2::before {
+    background: url(/img/uploads/pag-2.png);
+}
+.footer {
+    background-color: #212529 !important;
+}
+#selos_pagamentos b, #selos_segurancas b {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+#creditos {
+    background-color: #17191C;
+    span {
+        color: #DEE2E6;
+    }
+    img {
+        margin-right: 24px;
+    }
+    .footer__credits {
+        margin-top: 0;
+        border: none;
+        padding-bottom: var(--spacer-3);
+    }
+    #go-to-top {
+        background-color: #17191C;   
+        border: none;
+    }
+}
+.footer__title {
+    font-size: 16px;
+    color: #DEE2E6;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.footer__links li a {
+    font-size: 14px;
+    color: #DEE2E6;
+}
+.footer__contacts .list-unstyled * {
+    color: #DEE2E6 !important;
+}
+.footer__social i {
+    color: #DEE2E6;;
+}
+.footer address::before {
+    background-image: url(/img/uploads/icon-place.png);
+    height: 40px;
+}
+.footer .container .row:not(:last-child) {
+    padding-bottom: 2rem;
+    border-bottom: .5px solid #ccc;
+}
+#list-categories {
+    padding-top: 2.5rem;
+}
+.footer__title::after {
+    content: none !important;
+}

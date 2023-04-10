@@ -8,7 +8,7 @@ const themeCustom = _.settings.theme.custom || ''
 <footer class="footer py-3 py-lg-4 py-xl-5">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-auto order-<%= themeCustom === 'ecom-beauty' ? '' : 'lg-'%>last pl-xl-4">
+      <div class="col-12 col-md-3 order-<%= themeCustom === 'ecom-beauty' ? '' : 'lg-'%>last pl-xl-4">
         <div class="footer__contacts">
           <% if (footer.contacts.title) { %>
             <div class="footer__title">
@@ -57,24 +57,18 @@ const themeCustom = _.settings.theme.custom || ''
               </li>
             <% } %>
             <% if (footer.contacts.address) { %>
-              <li>
+              <li class="d-flex">
                 <address>
                   <%= contacts.address %>
                 </address>
               </li>
             <% } %>
           </ul>
-
-          <% if (footer.contacts.socials) { %>
-            <p class="footer__social">
-              <%- await include('@/layout/inc/networks', { _, contacts }) %>
-            </p>
-          <% } %>
         </div>
       </div>
 
       <% if (footer.links_1.list_pages || footer.links_1.list.find(({ url }) => url)) { %>
-        <div class="col-12 col-sm-6 col-lg col-xl-auto px-xl-4">
+        <div class="col-12 col-md-3 px-xl-4 order-first">
           <a
             class="footer__title"
             data-toggle="collapse"
@@ -91,7 +85,6 @@ const themeCustom = _.settings.theme.custom || ''
                 <% (_.cms('pages') || []).forEach(slug => { %>
                   <% const { title } = _.cms(`pages/${slug}`) %>
                   <li>
-                    <i class="i-chevron-right"></i>
                     <a href="/pages/<%= slug %>">
                       <%= title %>
                     </a>
@@ -102,7 +95,6 @@ const themeCustom = _.settings.theme.custom || ''
               <ul class="footer__links">
                 <% footer.links_1.list.forEach(({ url, text }) => { %>
                   <li>
-                    <i class="i-chevron-right"></i>
                     <a href="<%= url %>">
                       <%= text %>
                     </a>
@@ -114,97 +106,134 @@ const themeCustom = _.settings.theme.custom || ''
         </div>
       <% } %>
 
-      <% if (footer.links_2.list_categories || footer.links_2.list.find(({ url }) => url)) { %>
-        <div class="col-12 col-sm-6 col-lg col-xl-auto px-xl-4">
-          <a
+      <div class="col-12 col-md-3 order-second">
+        <a
             class="footer__title"
             data-toggle="collapse"
-            href="#footer-categories"
+            href="#footer-ajuda"
             role="button"
             aria-expanded="false"
-            aria-controls="footer-categories"
+            aria-controls="footer-ajuda"
           >
-            <%= footer.links_2.title || _.dictionary('categories') %>
-          </a>
-          <div class="collapse" id="footer-categories">
-            <% if (footer.links_2.list_categories) { %>
-              <ul class="footer__links">
-                <% _.categories.forEach(({ name, slug, parent }) => { %>
-                  <% if (!parent) { %>
-                    <li>
-                      <i class="i-chevron-right"></i>
-                      <a href="/<%= slug %>">
-                        <%= name %>
-                      </a>
-                    </li>
-                  <% } %>
-                <% }) %>
-              </ul>
-            <% } else { %>
-              <ul class="footer__links">
-                <% footer.links_2.list.forEach(({ url, text }) => { %>
-                  <li>
-                    <i class="i-chevron-right"></i>
-                    <a href="<%= url %>">
-                      <%= text %>
-                    </a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } %>
-          </div>
+            AJUDA E SUPORTE
+        </a>
+        <div class="collapse" id="footer-ajuda">
+          <ul class="footer__links">
+            <li>
+              <a href="/app/#/account/account">
+                Minha Conta
+              </a>
+            </li>
+            <li>
+              <a href="/app/#/account/orders">
+                Meus Pedidos
+              </a>
+            </li>
+            <li>
+              <a href="/pages/contato">
+                Fale Conosco
+              </a>
+            </li>
+            <li>
+              <a href="/pages/faq">
+                Dúvidas Frequentes
+              </a>
+            </li>
+          </ul>
         </div>
-      <% } %>
-
-      <div class="col-12 col-xl order-<%= themeCustom === 'ecom-beauty' ? '' : 'lg-'%>first">
-        <h2 class="footer__title footer__store">
-          <%= footer.description.title || _.settings.name %>
-        </h2>
-        <p><%- footer.description.text || _.settings.description %></p>
-
-        <div class="mt-4 mb-3">
-          <p class="footer__payment-methods">
-            <% Object.keys(footer.payment_methods).forEach(method => { %>
-              <% if (footer.payment_methods[method]) { %>
-                <i class="pay-icon pay-icon--<%= method %>"></i>
-              <% } %>
-            <% }) %>
-          </p>
-          <div class="footer__stamps">
-            <%- await include(`@/sections/stamps`, { _, opt: { stamps: footer.stamps } }) %>
-          </div>
+      </div>
+      
+      <div class="col-12 col-md-3 order-last">
+        <a
+            class="footer__title"
+            data-toggle="collapse"
+            href="#footer-socials"
+            role="button"
+            aria-expanded="false"
+            aria-controls="footer-ajuda"
+          >
+            SIGA-NOS
+        </a>
+        <div class="collapse" id="footer-socials">
+          <% if (footer.contacts.socials) { %>
+            <p class="footer__social">
+              <%- await include('@/layout/inc/networks', { _, contacts }) %>
+            </p>
+          <% } %>
         </div>
       </div>
     </div>
-
-    <div class="footer__credits">
-      <span>
-        <%= footer.credits || `© ${_.store.name} / ${contacts.address} / ${contacts.doc_number}` %>
-      </span>
-      <% if (themeCustom === 'ecom-beauty') { %>
-        <div class="ecom-credits-container">
-          <div class="ecom-credits">
-            <a href="https://e-com.plus" target="_blank" rel="noopener">
-              <img
-                src="https://ecom.nyc3.cdn.digitaloceanspaces.com/storefront/ecom-credits-white.png"
-                alt="E-Com Plus"
-                width="125.42"
-                height="20"
-              >
+    <div class="row" id="list-categories">
+      <% if (footer.links_2.list_categories) { %>
+        <% _.categories.forEach(({ name, slug, parent }) => { %>
+          <% if (!parent) { %>
+            <div class="col-12 col-md-2">
+              <a
+              class="footer__title"
+              data-toggle="collapse"
+              href="#footer-<%= slug %>"
+              role="button"
+              aria-expanded="false"
+              aria-controls="footer-<%= slug %>"
+            >
+              <%= name %>
             </a>
-          </div>
-        </div>
+            <% const subcategories = _.categories.filter(({ parent }) => parent && parent.slug === slug) %>
+            <% if (subcategories.length) { %>
+              <div class="collapse" id="footer-<%= slug %>">
+                <ul class="footer__links">
+                  <% subcategories.forEach(subcategory => { %>
+                    <li>
+                      <a href="/<%= subcategory.slug %>">
+                        <%= subcategory.name %>
+                      </a>
+                    </li>
+                  <% }) %>
+                </ul>
+              </div>
+            <% } %>
+            </div>
+          <% } %>
+        <% }) %>
       <% } %>
-      <button
-        id="go-to-top"
-        class="btn btn-primary ml-3"
-        type="button"
-        aria-label="<%= _.dictionary('goToTop') %>"
-      >
-        <i class="i-chevron-up"></i>
-      </button>
     </div>
-  </div>  
+    <hr>
+    <div class="row">
+      <div id="selos_pagamentos" class="col-12 col-md-7">
+        <b>Pagamentos</b>
+        <div class="mt-3 mb-3">
+          <ul class="list-unstyled" style="display: flex;">
+            <li style="padding: 5px"><img height="40px" src="/img/uploads/pag-1.png"></li>
+            <li style="padding: 5px"><img height="40px" src="/img/uploads/pag-2.png"></li>
+          </ul>
+        </div>
+      </div>
+      <div id="selos_segurancas" class="col-12 col-md-5">
+        <b>Segurança</b>
+        <div class="footer__stamps">
+          <%- await include(`@/sections/stamps`, { _, opt: { stamps: footer.stamps } }) %>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
+<div id="creditos">
+  <div class="footer__credits container">
+    <h2 class="footer__title footer__store">
+      <img height="64" width="64"  src="/img/uploads/nc-footer.png" alt="NC Extreme">
+    </h2>
+    <span>
+      <%= footer.credits || `© ${_.store.name} / ${contacts.address} / ${contacts.doc_number}` %>
+    </span>
+    <button
+      id="go-to-top"
+      class="btn btn-primary ml-3"
+      type="button"
+      aria-label="<%= _.dictionary('goToTop') %>"
+    >
+      <i class="i-chevron-up"></i>
+    </button>
+  </div> 
+</div>
 
 <%- await include('@/layout/inc/ecom-credits') %>
