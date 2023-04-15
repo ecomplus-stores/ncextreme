@@ -62,3 +62,22 @@
 .footer__title::after {
     content: none !important;
 }
+.top-bar__countdown {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), #A8AAAE;
+    @media(min-width: 992px) {
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        max-width: var(--content-max-width);
+    }
+    color: #212529;
+    b {
+        font-weight: 700;
+    }
+}
+.tarja-top {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), #A8AAAE;
+}
+.top-bar__page-links a {
+    font-weight: 400;
+}

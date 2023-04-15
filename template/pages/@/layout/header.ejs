@@ -57,16 +57,34 @@ const isCentralizedLogo = header.centralized_logo
   <% if (header.marketing_stripe) { %>
     <% if (header.marketing_stripe.text) { %>
       <% if (header.marketing_stripe.link) { %>
-        <a
+        <div class="tarja-top">
+          <a
           class="top-bar__countdown"
           style="<%= marketingStripeStyle %>"
           href="<%= header.marketing_stripe.link %>"
         >
-          <%= header.marketing_stripe.text %>
+          <b><%= header.marketing_stripe.text %></b> NO BOLETO OU PIX
         </a>
+        <% if (header.contacts_stripe.pages) { %>
+          <div class="top-bar__page-links">
+            <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
+              <a href="<%= link %>"><%= title %></a>
+            <% }) %>
+          </div>
+        <% } %>
+      </div>
       <% } else { %>
-        <div class="top-bar__countdown" style="<%= marketingStripeStyle %>">
-          <%= header.marketing_stripe.text %>
+        <div class="tarja-top">
+          <div class="top-bar__countdown container-fluid " style="<%= marketingStripeStyle %>">
+            <span><b><%= header.marketing_stripe.text %></b> NO BOLETO OU PIX</span>
+            <% if (header.contacts_stripe.pages) { %>
+              <div class="top-bar__page-links">
+                <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
+                  <a href="<%= link %>"><%= title %></a>
+                <% }) %>
+              </div>
+            <% } %>
+          </div>
         </div>
       <% } %>
     <% } %>
@@ -76,15 +94,6 @@ const isCentralizedLogo = header.centralized_logo
     <div class="container-fluid">
       <div class="row">
         <div class="col d-flex">
-          <nav class="top-bar__page-links">
-            <% if (header.contacts_stripe.pages) { %>
-              <div class="<%= (themeCustom === 'ecom-beauty' && isCategoriesNavFull) ? 'd-lg-none' : '' %>">
-                <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
-                  <a href="<%= link %>"><%= title %></a>
-                <% }) %>
-              </div>
-            <% } %>
-          </nav>
           <% if (header.contacts_stripe.phone_wpp) { %>
             <div class="top-bar__contacts-container">
               <% if (contacts.whatsapp) { %>
