@@ -177,3 +177,15 @@
         padding: 3px 10px !important;
     }
 }
+.i-shipping-fast::before {
+    content: url(/img/uploads/local-shipping.svg);
+}
+.i-percent::before {
+    content: url(/img/uploads/percent.svg);
+}
+.i-credit-card::before {
+    content: url(/img/uploads/credit-card.svg);
+}
+.i-exchange::before {
+    content: url(/img/uploads/verified-user.svg);
+}
