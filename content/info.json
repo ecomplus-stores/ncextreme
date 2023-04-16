@@ -1,18 +1,22 @@
 {
   "shipping": {
     "show": true,
-    "text": "FRETE GRÁTIS ACIMA DE 199"
+    "title": "FRETE GRÁTIS",
+    "text": "ACIMA DE 199"
   },
   "installments": {
     "show": true,
-    "text": "Parcele sem juros"
+    "title": "PARCELE SEM JUROS",
+    "text": "EM ATÉ 3X NO CARTÃO"
   },
   "exchange": {
     "show": true,
-    "text": "Não gostou? A primeira troca é gratuita"
+    "title": "COMPRE COM",
+    "text": "SEGURANÇA"
   },
   "promo": {
     "show": true,
-    "text": "Diferentes promoções ao longo do ano!"
+    "title": "PAGUE COM PIX",
+    "text": "5% DE DESCONTO"
   }
 }

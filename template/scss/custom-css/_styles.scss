@@ -189,3 +189,31 @@
 .i-exchange::before {
     content: url(/img/uploads/verified-user.svg);
 }
+.info-bar {
+    background-color: #fff;
+    color: #212529;
+    text-transform: uppercase;
+    font-size: 16px;
+    #shipping-fast, #exchange {
+        .info-bar__text {
+            font-weight: 700;
+        }
+    }
+    #credit-card, #percent {
+        .info-bar__title {
+            font-weight: 700;
+        }
+    }
+    .rounded-icon {
+        padding-top: .375rem;
+        background-color: rgba(192, 24, 24, 0.16);
+        border-radius: 50px;
+    } 
+}
+#s-todos .footer__title {
+    font-weight: 700 !important;
+    color: #212529 !important
+}
+.header__category:hover {
+    background: unset;
+  }

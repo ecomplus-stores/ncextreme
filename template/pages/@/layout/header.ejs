@@ -288,14 +288,52 @@ const isCentralizedLogo = header.centralized_logo
   <% if (categories && categories.length) { %>
     <div class="d-none d-lg-block <%= isCategoriesNavFull ? 'col-12 order-lg-last' : 'col' %> header__nav-block">
       <nav class="header__nav<%= isCategoriesNavFull ? ' header__nav--full' : '' %>">
-        <a 
-          href="javascript:;"
-          class="header__category"
-          id="cd-all"
-          >
-          <i class="header__toggler-icon i-bars" style="color: #fff; font-size: 15px;"></i>
-          Todas
-        </a>
+        <div class="d-inline-block">
+            <a 
+              href="javascript:;"
+              class="header__category"
+              id="cd-all"
+              onmouseover="toggleSubmenu('todos', this)"
+              onclick="toggleSubmenu('todos', this)"
+            >
+              <i class="header__toggler-icon i-bars" style="color: #fff; font-size: 15px;"></i>
+              Todas
+            </a>
+            <nav class="header__submenu header__submenu--full" id="s-todos">
+              <div class="row">
+                <% _.categories.forEach(({ name, slug, parent, _id }) => { %>
+                  <% if (!parent) { %>
+                    <div class="col-12 col-md-2">
+                    <a
+                      class="footer__title"
+                      id="pb-<%= _id %>"
+                      href="<%= slug %>"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="footer-<%= slug %>"
+                    >
+                      <%= name %>
+                    </a>
+                    <% const subcategories = _.categories.filter(({ parent }) => parent && parent.slug === slug) %>
+                    <% if (subcategories.length) { %>
+                      <div id="header__submenu-<%= slug %>">
+                        <ul class="footer__links">
+                          <% subcategories.forEach(subcategory => { %>
+                            <li>
+                              <a id="sb-<%= subcategory.slug %>" href="/<%= subcategory.slug %>">
+                                <%= subcategory.name %>
+                              </a>
+                            </li>
+                          <% }) %>
+                        </ul>
+                      </div>
+                    <% } %>
+                    </div>
+                  <% } %>
+                <% }) %>
+              </div>
+            </nav>
+        </div>
         <% categories.forEach(({ slug, name, _id}) => { %>
           <% let $categoryLink %>
           <div class="d-inline-block">

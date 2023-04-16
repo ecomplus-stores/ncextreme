@@ -3,8 +3,8 @@ const info = _.cms('info')
 const barCols = []
 ;[
   ['shipping', 'shipping-fast'],
-  ['installments', 'credit-card'],
   ['exchange', 'exchange'],
+  ['installments', 'credit-card'],
   ['promo', 'percent']
 ].forEach(([prop, icon]) => {
   if (info[prop] && info[prop].show) {
@@ -19,7 +19,7 @@ const barCols = []
     <div class="container">
       <div class="info-bar__nav row">
         <% barCols.forEach(({ link, icon, title, text }) => { %>
-          <div class="col-auto col-sm-6 col-lg">
+          <div class="col-auto col-sm-6 col-lg" id="<%= icon %>">
             <a class="info-bar__item" href="<%= link || 'javascript:;' %>">
               <span class="rounded-icon">
                 <i class="i-<%= icon %>"></i>
