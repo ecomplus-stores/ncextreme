@@ -23,6 +23,11 @@
       {{ i19asOf }}
     </small>
     {{ formatMoney(price) }}
+
+    <span class="discount-tag-price" v-if="discount && discount.value">
+      <img src="/img/uploads/pix-nx.png" alt="Pix">
+      <span class="discount-unit"> -{{ discount.value  }} %</span>
+    </span>
   </strong>
 
   <transition-group enter-active-class="animated slideInDown">

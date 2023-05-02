@@ -1,0 +1,11 @@
+{
+    "stamps_list": [
+        {
+            "id": "frete-gratis",
+            "img": "/img/uploads/frete-gratis-teste.png",
+            "skus": [
+                "TPY4368"
+            ]
+        }   
+    ]
+}

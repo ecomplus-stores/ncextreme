@@ -282,3 +282,50 @@
         }
     }
 }
+.i-chevron-left::before {
+    content: url(/img/uploads/chevronleft.svg);
+}
+.i-chevron-right::before {
+    content: url(/img/uploads/chevronright.svg);
+}
+.discount-unit {
+    color: #28A745;
+    font-size: 16px;
+}
+.product-card__prices {
+    .prices__discount {
+        display: none;
+    }
+    .prices__value {
+        font-size: 24px;
+    }
+}
+.discount-tag-price {
+    img {
+        height: 28px;
+    }
+    position: absolute;
+    margin-left: 16px;
+    margin-top: -3px;
+}
+.quantity-selector__input {
+    border: unset;
+}
+.quantity-selector__btn-container {
+    margin-right: 16px;
+    border-radius: 8px;
+    border: 1px solid #DADADA;
+    min-width: unset;
+    .i-chevron-down::before {
+        content: '-'
+    }
+    .i-chevron-up::before {
+        content: '+'
+    }
+}
+.quantity-selector__label {
+   span button {
+        width: 100%;
+        background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), #28C76F;
+    }
+}

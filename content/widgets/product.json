@@ -3,9 +3,9 @@
   "active": true,
   "desktopOnly": false,
   "options": {
-    "buyText": "",
+    "buyText": "COMPRAR AGORA",
     "buy": "",
-    "strHasQuantitySelector": "_",
+    "strHasQuantitySelector": "true",
     "strHasPromotionTimer": "_",
     "lowQuantityToWarn": 12,
     "maxVariationOptionsBtns": 6,
