@@ -239,3 +239,46 @@
     font-weight: 600;
     --max-lines: 4;
 }
+.product-card__buy button {
+    background-color: #28C76F;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    i {
+        color: #fff !important;
+        position: absolute;
+        top: 20%;
+        left: 70%;
+        &::before {
+            content: url('/img/uploads/bagshop.svg')
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .product-card__buy.fade {
+        opacity: 1;
+    }
+}
+
+.product-card {
+    .prices__compare {
+        color: #6C757D; 
+    }
+    .prices__installments {
+        color: #6C757D;
+        font-weight: bold !important;
+        span {
+            &::before {
+                content: 'de';
+                font-weight: normal !important;
+            }
+            &::after {
+                content: 'no cartão';
+                font-weight: normal !important;
+            }
+        }
+    }
+}
