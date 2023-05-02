@@ -216,4 +216,26 @@
 }
 .header__category:hover {
     background: unset;
-  }
+}
+.products-carousel__title::before {
+    background: #c01818;
+    content: " ";
+    height: 4px;
+    left: var(--spacer-3);
+    margin-top: -.05rem;
+    position: absolute;
+    top: 0;
+    width: 59px;
+}
+.products-carousel__title {
+    text-align: unset;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-card__name {
+    font-size: 20px;
+    color: #212529;
+    font-weight: 600;
+    --max-lines: 4;
+}
