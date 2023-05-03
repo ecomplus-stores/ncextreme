@@ -315,7 +315,7 @@
     margin-right: 16px;
     border-radius: 8px;
     border: 1px solid #DADADA;
-    min-width: unset;
+    min-width: unset !important;
     .i-chevron-down::before {
         content: '-'
     }
@@ -323,9 +323,10 @@
         content: '+'
     }
 }
-.quantity-selector__label {
-   span button {
-        width: 100%;
-        background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), #28C76F;
-    }
+.product__buy .quantity-selector__label button {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), #28C76F !important;
+    border: unset;
+}
+.product__sticky-buy .discount-tag-price {
+    display: none;
 }
