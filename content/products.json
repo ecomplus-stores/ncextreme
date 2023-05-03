@@ -8,8 +8,8 @@
       "type": "product-block",
       "enabled": true,
       "size_guide": {
-        "image": "",
-        "title": ""
+        "image": "https://",
+        "title": "Tabela de medidas"
       }
     },
     {
@@ -24,10 +24,6 @@
     {
       "type": "product-description",
       "title": "Quem comprou este produto, também comprou:",
-      "enabled": true
-    },
-    {
-      "type": "product-specifications",
       "enabled": true
     },
     {
