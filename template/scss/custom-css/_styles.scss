@@ -320,7 +320,8 @@
     margin-right: 16px;
     border-radius: 8px;
     border: 1px solid #DADADA;
-    min-width: unset !important;
+    min-width: 89.6px !important;
+    margin-left: 0px;
     .i-chevron-down::before {
         content: '-'
     }
@@ -328,9 +329,13 @@
         content: '+'
     }
 }
-.product__buy .quantity-selector__label button {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), #28C76F !important;
-    border: unset;
+.product__buy .quantity-selector__label {
+    width: 100%;
+    button {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), #28C76F !important;
+        border: unset;
+        width: 100%;
+    }
 }
 .product__sticky-buy {
     .discount-tag-price {
@@ -389,4 +394,66 @@
 .product__sku {
     font-size: 14px;
     color: #4B465C;
+}
+.shipping-calculator__form .input-group-append {
+    .i-shipping-fast::before {
+        background: url(/img/uploads/truck-3.png);
+        content: '';
+        width: 21px;
+        height: 21px;
+        background-size: 100% 100%;
+        background-position: 0 2px;
+        display: inline-block;
+    }
+    button {
+        background-color: #98999d;
+        border-radius: 8px !important;
+        margin-left: 7px;
+        border: unset;
+    }
+}
+#shipping-calculator-zip {
+    border-radius: 8px !important;
+}
+.shipping-calculator__form label {
+    font-weight: 600;
+}
+.n-sei-cep {
+    text-decoration-line: underline !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    color: #6f6b7d !important;
+    margin-left: 4px;
+}
+
+.quantity-selector__label button {
+    background-color: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), #28C76F;;
+    border: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 600;
+    letter-spacing: 0.43px;
+    i {
+        color: #fff !important;
+        position: absolute;
+        @media(max-width: 767px) {
+            left: 80%;
+        }
+        left: 75%;
+        &::before {
+            content: url('/img/uploads/bagshop.svg')
+        }
+    }
+}
+.product__sticky-buy a.btn-primary {
+    background-color: #28C76F !important; 
+    border: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.43px;
+    i {
+        display: none;
+    }
 }
