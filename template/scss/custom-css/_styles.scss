@@ -476,50 +476,92 @@
 .page--home .custom-html {
     color: #fff;
     background-color: #111212;
-    .content {
-        top: calc(50% - 136px);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 32px;
-    }
-    .r-35000-parent {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 4px;
-    }
-    .nc-extreme {
-        position: relative;
-        line-height: 90%;
-        font-weight: 600;
-    }
-    .instinto-de-superao-container {
-        position: relative;
-        font-size: 64px;
-        line-height: 100%;
-        font-weight: 800;
-    }
-    .grtis {
-        margin: 0;
-    }
-    .ganhe-10-de-desconto-em-sua-1-parent {
-        flex-direction: column;
-        color: #FD7E14;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 16px;
-    }
-    .search-parent {
-        flex-direction: row;
-        font-size: 18px;
-        color: #fff;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 16px;
+    .video {
+        padding-top: 7%;
+        padding-bottom: 7%;
+        .content {
+            top: calc(50% - 136px);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 32px;
+        }
+        .r-35000-parent {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 4px;
+        }
+        .nc-extreme {
+            position: relative;
+            line-height: 90%;
+            font-weight: 600;
+        }
+        .instinto-de-superao-container {
+            position: relative;
+            @media(max-width: 767px) {
+                font-size: 3rem;
+            }
+            font-size: 64px;
+            line-height: 100%;
+            font-weight: 800;
+        }
+        .grtis {
+            margin: 0;
+        }
+        .ganhe-10-de-desconto-em-sua-1-parent {
+            flex-direction: column;
+            color: #FD7E14;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 16px;
+        }
+        .search-parent {
+            @media(max-width: 767px) {
+                flex-direction: column;
+            }
+            flex-direction: row;
+            font-size: 18px;
+            color: #fff;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 16px;
+            .search {
+                background-color:#fff;
+                border: 1px solid #dbdade;
+                box-sizing: border-box;
+                flex-shrink: 0;
+                border-radius: 8px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+        .mail-icon {
+            position: absolute;
+            margin-top: 8px;
+            margin-left: 5px;
+        }
+        .button16 {
+            border-radius: 8px;
+            background-color: #c01818;
+            font-size: 17px;
+        }
+        .button16, .button17 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .button17 {
+            padding: 7px 26px;
+            gap: 10px;
+        }
     }
 }
