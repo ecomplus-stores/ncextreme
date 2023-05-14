@@ -1,0 +1,103 @@
+<%
+const itemData = {}
+let itemDataFields = ['_id', 'sku', 'slug', 'quantity']
+if (Array.isArray(_.itemDataFields)) {
+  itemDataFields = itemDataFields.concat(_.itemDataFields)
+}
+itemDataFields.forEach(field => itemData[field] = opt.item[field])
+itemData.name = _.ecomUtils.name(opt.item)
+itemData.price = _.ecomUtils.price(opt.item)
+
+const imgObj = _.ecomUtils.img(opt.item)
+if (imgObj) {
+  itemData.pictures = [{
+    _id: _.ecomUtils.randomObjectId(),
+    normal: imgObj
+  }]
+}
+%>
+
+<div 
+  class="ofertas-do-dia"
+  data-product-id="<%= itemData._id %>"
+  data-sku="<%= itemData.sku %>"
+>
+  <div class="frame-parent45">
+    <div class="box-ofertas-parent">
+      <%
+const timestamp = Date.now()
+if (!opt.start || timestamp > new Date(opt.start).getTime()) {
+  if (timestamp < new Date(opt.end).getTime()) {
+    %>
+    <div 
+      class="box-ofertas timer-custom-1"
+      data-end="<%= opt.end %>"
+      data-max-hours="<%= opt.max_hours %>"
+    >
+      <div class="ofertas-do-dia-parent">
+        <b class="b">OFERTAS DO DIA</b>
+        <div class="aproveite-essas-ofertas">
+          Aproveite! Essas ofertas acabam em:
+        </div>
+      </div>
+      <div class="acute-parent timer-custom">
+        <img class="acute-icon" alt="" src="/img/uploads/acute.svg">
+        <div class="parent">
+          <b class="b">06</b>
+          <div class="hrs">hrs</div>
+        </div>
+        <b class="b">:</b>
+        <div class="parent">
+          <b class="b">32</b>
+          <div class="hrs">hrs</div>
+        </div>
+        <b class="b">:</b>
+        <div class="parent">
+          <b class="b">14</b>
+          <div class="hrs">hrs</div>
+        </div>
+      </div>
+    </div>
+    <%
+  }
+}
+%>
+      <div class="content-produto12">
+        <div class="frame-parent46">
+          <div class="ecu-pro-tune-pr-sport-parent">
+            <div class="ecu-pro-tune">
+              <%= itemData.name %>
+            </div>
+          </div>
+          <div class="frame-group">
+            <div class="product-card__prices prices">
+              <strong class="prices__value">
+                <% if (opt.item.available && opt.item.visible && _.ecomUtils.inStock(opt.item)) { %>
+                  <%= _.ecomUtils.formatMoney(itemData.price) %>
+                <% } else { %>
+                  --
+                <% } %>
+              </strong>
+            </div>
+            <div class="button26">
+              <a href="/<%= itemData.slug %>" class="button1">
+                <div class="text">APROVEITE AGORA!</div>
+                <img class="bag-shop-icon" alt="" src="./public/bagshop.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% if (imgObj) { %>
+      <img 
+        class="produto-icon lozad-delay fade" 
+        alt="<%= imgObj.alt %>" 
+        src="<%= imgObj.url %>"
+        <% if (imgObj.url.startsWith('https://ecoms1.com/')) { %>
+          crossorigin="anonymous"
+        <% } %>
+      >
+    <% } %>
+  </div>
+</div>

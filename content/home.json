@@ -24,6 +24,17 @@
       "enabled": true
     },
     {
+      "type": "offers-timer",
+      "max_hours": 24,
+      "img": "/img/uploads/nc-banner.png",
+      "start": "2023-03-07T12:53:18.119Z",
+      "end": "2023-05-31T02:59:18.464Z",
+      "offers": [
+        "643d46ea4bd2e929c1d30e9a"
+      ],
+      "notes": "Liquida já"
+    },
+    {
       "type": "collection-shelf",
       "shuffle": true,
       "collection_id": null,

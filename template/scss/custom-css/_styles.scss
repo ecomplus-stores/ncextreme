@@ -565,3 +565,203 @@
         }
     }
 }
+.offers-timer {
+    border-bottom: unset;
+    padding-bottom: unset;
+    .products-carousel .products-carousel__item {
+        width: 100%;
+    }
+    background: linear-gradient(180deg, #e8e8e8, rgba(232, 232, 232, 0));
+    @media (min-width: 992px) {
+        .products-carousel {
+            padding: 0 !important;
+            margin: 0 !important;
+            border-radius: 8px;
+            background-color: unset;
+        }
+        .box-ofertas-parent {
+            width: 288px;
+            height: 444px;
+        }
+        .content-produto12 {
+            width: 290px;
+            height: 300px;
+        }
+        .produto-icon {
+            position: relative;
+            width: auto;
+            height: 444px;
+            flex-shrink: 0;
+        }
+    }
+    .frame-parent45 {
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #dbdade;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .box-ofertas {
+        background-color: #FD7E14;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        box-sizing: border-box;
+        gap: 17px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .acute-parent {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            font-size: 32px;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        
+        .ofertas-do-dia-parent {
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+            font-size: 24px;
+        }
+        .b {
+            position: relative;
+            line-height: 100%;
+        }
+        .aproveite-essas-ofertas {
+            align-self: stretch;
+            position: relative;
+            font-size: 13px;
+            line-height: 100%;
+            font-weight: 500;
+        }
+        .acute-icon {
+            position: relative;
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+        }
+        .hrs {
+            position: relative;
+            font-size: 14px;
+            line-height: 100%;
+        }
+        .parent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 40px !important;
+        }
+    }
+    .content-produto12 {
+        border-radius: 4px;
+        padding: 24px;
+        box-sizing: border-box;
+        font-size: 20px;
+        color: #212529;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .frame-parent46 {
+            display: flex;
+            align-self: stretch;
+            flex: 1;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .ecu-pro-tune-pr-sport-parent {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            align-self: stretch;
+            flex-direction: column;
+            gap: 8px;
+            .ecu-pro-tune {
+                align-self: stretch;
+                position: relative;
+                line-height: 120%;
+                font-weight: 600;
+              }
+        }  
+        .frame-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+            justify-content: flex-start;
+            gap: 16px;
+            font-size: 15px;
+            color: #6C757D;
+            .button26 {
+                align-self: stretch;
+                border-radius: var(--br-7xs);
+                background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), #28c76f;
+                box-shadow: 0 2px 4px rgba(165, 163, 174, 0.3);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+            }
+            .button1 {
+                padding: 10px 20px;
+                gap: 8px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                .text {
+                    position: relative;
+                    letter-spacing: 0.43px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+                .bag-shop-icon {
+                    position: relative;
+                    width: 18px;
+                    height: 18px;
+                    flex-shrink: 0;
+                }
+            }
+              
+        }        
+    }
+}
+.search__header + .search__body .product-card.search-engine__item.product-card--small {
+    * {
+        font-size: 12px !important;
+    }
+    .product-card__buy.fade {
+        display: none;
+    }
+    .discount-tag-price img {
+        height: 18px;
+    }
+}
+@media (min-width: 992px) {
+    #desktop {
+        display: block;
+    }
+    #mobile {
+        display: none;
+    }
+}
+@media (max-width: 991.99px) {
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+}

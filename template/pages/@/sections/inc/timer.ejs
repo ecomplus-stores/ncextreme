@@ -3,20 +3,34 @@ const timestamp = Date.now()
 if (!opt.start || timestamp > new Date(opt.start).getTime()) {
   if (timestamp < new Date(opt.end).getTime()) {
     %>
-    <div
-      class="timer"
+    <div 
+      class="box-ofertas timer-custom-1"
       data-end="<%= opt.end %>"
       data-max-hours="<%= opt.max_hours %>"
     >
-      <div class="timer__icon">
-        <i class="i-stopwatch"></i>
-      </div>
-      <span class="timer__count">__:__:__</span>
-      <% if (opt.notes) { %>
-        <div class="timer__notes">
-          <%= opt.notes %>
+      <div class="ofertas-do-dia-parent">
+        <b class="b">OFERTAS DO DIA</b>
+        <div class="aproveite-essas-ofertas">
+          Aproveite! Essas ofertas acabam em:
         </div>
-      <% } %>
+      </div>
+      <div class="acute-parent timer-custom">
+        <img class="acute-icon" alt="" src="/img/uploads/acute.svg">
+        <div class="parent">
+          <b class="b">06</b>
+          <div class="hrs">hrs</div>
+        </div>
+        <b class="b">:</b>
+        <div class="parent">
+          <b class="b">32</b>
+          <div class="hrs">hrs</div>
+        </div>
+        <b class="b">:</b>
+        <div class="parent">
+          <b class="b">14</b>
+          <div class="hrs">hrs</div>
+        </div>
+      </div>
     </div>
     <%
   }

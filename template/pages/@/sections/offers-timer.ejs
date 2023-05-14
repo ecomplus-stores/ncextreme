@@ -9,33 +9,206 @@ if (Array.isArray(opt.offers) && opt.offers.length) {
     console.error(err)
     items = []
   }
+  let maxHours, end
+  if (opt.max_hours) {
+    maxHours = opt.max_hours
+  } 
+  if (opt.end) {
+    end = opt.end
+  }
 
   if (items.length) {
     %>
     <section class="offers-timer my-4 my-lg-5">
       <div class="container">
         <div class="row">
-          <div
-            <% if (items.length <= 3) { %>
-              class="col-12 col-md-<%= (7 - items.length) %>"
-            <% } else { %>
-              class="col-12 col-lg-3"
+          <div class="col-md-4 col-12">
+            <% if (opt.img) { %>
+              <%- await include('@/sections/inc/banner', { _, opt }) %>
             <% } %>
-          >
-            <%- await include('@/sections/inc/timer', { _, opt }) %>
           </div>
-
-          <div class="col-12 col-md">
-            <div class="row">
-              <% for (let i = 0; i < items.length; i++) { %>
-                <div class="col-6 col-md">
-                  <%- await include('@/sections/inc/product-item', {
-                    _, opt: { item: items[i] }
-                  }) %>
+          <div class="col-md-8 col-12">
+            <% if (Array.isArray(items) && items.length) {
+              %>
+            
+              <section
+                class="products-carousel"
+                data-size="<%= items.length %>"
+                id="desktop"
+              >
+            
+                <div
+                  class="glide"
+                  data-wait-mutation="true"
+                  data-per-view="1"
+                  data-per-view-md="1"
+                  data-per-view-sm="1"
+                >
+                  <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides products-carousel__list">
+                      <% for (let i = 0; i < items.length; i++) { %>
+                        <li class="glide__slide products-carousel__item">
+                          <%
+                            const itemData = {}
+                            let itemDataFields = ['_id', 'sku', 'slug', 'quantity']
+                            if (Array.isArray(_.itemDataFields)) {
+                              itemDataFields = itemDataFields.concat(_.itemDataFields)
+                            }
+                            itemDataFields.forEach(field => itemData[field] = items[i][field])
+                            itemData.name = _.ecomUtils.name(items[i])
+                            itemData.price = _.ecomUtils.price(items[i])
+  
+                            const imgObj = _.ecomUtils.img(items[i], undefined ,'zoom')
+                            console.log(imgObj)
+                            if (imgObj) {
+                              itemData.pictures = [{
+                                _id: _.ecomUtils.randomObjectId(),
+                                normal: imgObj
+                              }]
+                            }
+                            %>
+  
+                            <div 
+                              class="ofertas-do-dia"
+                              data-product-id="<%= itemData._id %>"
+                              data-sku="<%= itemData.sku %>"
+                            >
+                              <div class="frame-parent45">
+                                <div class="box-ofertas-parent">
+                                  <%
+                                    const timestamp = Date.now()
+                                    if (!opt.start || timestamp > new Date(opt.start).getTime()) {
+                                      if (timestamp < new Date(opt.end).getTime()) {
+                                        %>
+                                        <div 
+                                          class="box-ofertas timer-custom-1"
+                                          data-end="<%= end %>"
+                                          data-max-hours="<%= maxHours %>"
+                                        >
+                                          <div class="ofertas-do-dia-parent">
+                                            <b class="b">OFERTAS DO DIA</b>
+                                            <div class="aproveite-essas-ofertas">
+                                              Aproveite! Essas ofertas acabam em:
+                                            </div>
+                                          </div>
+                                          <div class="acute-parent timer-custom">
+                                            <img class="acute-icon" alt="" src="/img/uploads/acute.svg">
+                                            <div class="parent">
+                                              <b class="b">06</b>
+                                              <div class="hrs">hrs</div>
+                                            </div>
+                                            <b class="b">:</b>
+                                            <div class="parent">
+                                              <b class="b">32</b>
+                                              <div class="hrs">hrs</div>
+                                            </div>
+                                            <b class="b">:</b>
+                                            <div class="parent">
+                                              <b class="b">14</b>
+                                              <div class="hrs">hrs</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <%
+                                      }
+                                    }
+                                  %>
+                                  <div class="content-produto12">
+                                    <div class="frame-parent46">
+                                      <div class="ecu-pro-tune-pr-sport-parent">
+                                        <div class="ecu-pro-tune">
+                                          <%= itemData.name %>
+                                        </div>
+                                      </div>
+                                      <div class="frame-group">
+                                        <div class="product-card__prices prices">
+                                          <strong class="prices__value">
+                                            <% if (items[i].available && items[i].visible && _.ecomUtils.inStock(items[i])) { %>
+                                              <%= _.ecomUtils.formatMoney(itemData.price) %>
+                                            <% } else { %>
+                                              --
+                                            <% } %>
+                                          </strong>
+                                        </div>
+                                        <div class="button26">
+                                          <a href="/<%= itemData.slug %>" class="button1">
+                                            <div class="text">APROVEITE AGORA!</div>
+                                            <img class="bag-shop-icon" alt="" src="/img/uploads/bagshop.svg">
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <% if (imgObj) { %>
+                                  <img 
+                                    class="produto-icon lozad-delay fade" 
+                                    alt="<%= imgObj.alt %>" 
+                                    src="<%= imgObj.url %>"
+                                    <% if (imgObj.url.startsWith('https://ecoms1.com/')) { %>
+                                      crossorigin="anonymous"
+                                    <% } %>
+                                  >
+                                <% } %>
+                              </div>
+                            </div>
+  
+                        </li>
+                      <% } %>
+                    </ul>
+            
+                    <div
+                      class="glide__arrows glide__arrows--outer"
+                      data-glide-el="controls"
+                    >
+                      <button
+                        class="btn glide__arrow glide__arrow--left"
+                        data-glide-dir="<"
+                        aria-label="<%= _.dictionary('previous') %>"
+                      >
+                        <i class="i-chevron-left"></i>
+                      </button>
+                      <button
+                        class="btn glide__arrow glide__arrow--right"
+                        data-glide-dir=">"
+                        aria-label="<%= _.dictionary('next') %>"
+                      >
+                        <i class="i-chevron-right"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              <% } %>
-            </div>
-          </div>
+              </section>
+
+              <section class="offers-timer my-4 my-lg-5" id="mobile">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      <% if (items.length <= 3) { %>
+                        class="col-12 col-md-<%= (7 - items.length) %>"
+                      <% } else { %>
+                        class="col-12 col-lg-3"
+                      <% } %>
+                    >
+                      <%- await include('@/sections/inc/timer', { _, opt }) %>
+                    </div>
+          
+                    <div class="col-12 col-md">
+                      <div class="row">
+                        <% for (let i = 0; i < items.length; i++) { %>
+                          <div class="col-12 col-md">
+                            <%- await include('@/sections/inc/product-item', {
+                              _, opt: { item: items[i] }
+                            }) %>
+                          </div>
+                        <% } %>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            <% } %>  
+          </div>        
         </div>
       </div>
     </section>
