@@ -1,5 +1,5 @@
 {
-  "css": ".quantity-selector__btn-container {\n    min-width: 98.6px!important;\n}",
+  "css": ".quantity-selector__btn-container {\n    min-width: 98.6px !important;\n}",
   "html_head": "",
   "html_body": ""
 }
