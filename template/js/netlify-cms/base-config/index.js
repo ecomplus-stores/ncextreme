@@ -97,6 +97,19 @@ export default options => {
         widget: 'number'
       }
     ]
+  },
+  {
+    label: 'Formulário marketing',
+    name: 'marketing',
+    widget: 'object',
+    fields: [
+      {
+        label: 'Exibir formulário de leads',
+        name: 'enabled',
+        widget: 'boolean',
+        default: false
+      }
+    ]
   }]
   return {
     backend: {

@@ -478,9 +478,14 @@
     width: 100%;
     border-radius: 4px;
 }
-.page--home .custom-html {
+#marketing, #marketing-footer {
     color: #fff;
-    background-color: #111212;
+    background: url(/img/uploads/video.gif) no-repeat, #111212;
+    background-size: 50% 100%;
+    background-position-x: right;
+    @media(max-width: 767px) {
+        background-size: 100% 100%;  
+    } 
     .video {
         padding-top: 7%;
         padding-bottom: 7%;
@@ -850,7 +855,12 @@
     }
 }
 
-.video-item {
-    background: url(/img/uploads/video.gif);
-    background-size: 100% 100%;
+#marketing-footer {
+    .html-clearfix {
+        margin-top: 0;
+    }
+}
+.footer.not-home {
+    padding-top: 0;
+    border-top: 0;
 }
