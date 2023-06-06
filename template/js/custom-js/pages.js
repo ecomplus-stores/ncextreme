@@ -1,8 +1,6 @@
 // Add your custom JavaScript for storefront pages here.
 const $timers1 = $('.timer-custom-1')
-console.log($timers1)
 if ($timers1.length) {
-    console.log('entrei')
   const formatTimeCustom = timeNumber => timeNumber.toString().padStart(2, '0')
   $timers1.each(function () {
     const { end, maxHours } = $(this)[0].dataset
@@ -53,4 +51,40 @@ if ($timers1.length) {
       updateTimerCount1()
     }
   })
+}
+
+if ($('.multiple-collection-shelf').length) {
+  const $multipleCollections = $('.multiple-collection-shelf')
+  for (const key in $multipleCollections) {
+    if (Object.hasOwnProperty.call($multipleCollections, key)) {
+      const { dataset } = $multipleCollections[key]
+      if (dataset && dataset.id) {
+        const $multipleCollection = $(`.multiple-collection-shelf[data-id="${dataset.id}"]`)
+        const $multipleTabList = $multipleCollection.find('.products-carousel-tabs__list')
+        $multipleTabList.click((e) => {
+          if (e.target && e.target.dataset && e.target.dataset.tabTitle) {
+            const titleTab = e.target.dataset.tabTitle
+            const $tabs = $multipleTabList[0].children
+            for (const tabCollectionTitle in $tabs) {
+              const tab = $tabs[tabCollectionTitle]
+              if (tab.children) {
+                const dataTab = tab.children[0] && tab.children[0].dataset && tab.children[0].dataset.tabTitle
+                if (tab.classList) {
+                  if (dataTab === titleTab) {
+                    tab.classList.add('is-active')
+                    $multipleCollection.find(`.tab-collection-${dataTab}`).toggleClass('d-none')
+                    $multipleCollection.find(`.tab-collection-${dataTab}`).toggleClass('d-block')
+                  } else {
+                    tab.classList.remove('is-active')
+                    $multipleCollection.find(`.tab-collection-${dataTab}`).toggleClass('d-none')
+                    $multipleCollection.find(`.tab-collection-${dataTab}`).toggleClass('d-block')
+                  }
+                }
+              }
+            }
+          }
+        })
+      }
+    }
+  }
 }

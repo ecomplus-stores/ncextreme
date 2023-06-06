@@ -57,6 +57,19 @@
       "headless": false,
       "limit": 12,
       "page": 1
+    },
+    {
+      "type": "multi-collection-shelf",
+      "shuffle": true,
+      "collection_ids": [
+        "6432d53b4bd2e929c1c70b8c:categories:Acessórios",
+        "6432d2d44bd2e929c1c708f0:categories:Vestuário"
+      ],
+      "sort": "offers",
+      "title": "Escolha Por Categoria",
+      "headless": false,
+      "limit": 12,
+      "page": 1
     }
   ]
 }

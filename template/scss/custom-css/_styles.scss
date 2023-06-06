@@ -252,7 +252,8 @@
         top: 20%;
         left: 70%;
         &::before {
-            content: url('/img/uploads/bagshop.svg')
+            content: url('/img/uploads/bagshop.svg');
+            padding-left: 3px
         }
     }
 }
@@ -312,6 +313,10 @@
     position: absolute;
     margin-left: 16px;
     margin-top: -3px;
+    @media(max-width: 668px) {
+        margin-left: 5px;
+        margin-top: -1px;
+    }
 }
 .quantity-selector__input {
     border: unset;
@@ -765,3 +770,83 @@
         display: block;
     }
 }
+.multiple-collection-shelf {
+    .products-carousel__title {
+        a::before {
+            background: #c01818;
+            content: " ";
+            height: 4px;
+            left: var(--spacer-3);
+            margin-top: -1rem;
+            position: absolute;
+            top: 0;
+            width: 59px;
+        }
+        &::before {
+            background: unset;
+        }
+        @media (min-width: 768px){
+            padding: 0 3rem;
+          }
+        @media (min-width: 992px) {
+            padding: 0 4rem;
+        } 
+    }
+    .products-carousel-tabs {
+        &__list {
+            align-items: center;
+            display: flex;
+            flex-wrap: nowrap;
+            list-style: none;
+            overflow-x: auto;
+            max-width: var(--content-max-width);
+            margin: var(--spacer-4) auto;
+            padding: 0 var(--spacer-2);
+    
+            li {
+                min-width: 40%;
+            }
+        }
+        @media (min-width: 768px){
+            padding: 0 3rem;
+            li {
+              min-width: unset;
+            }
+          }
+        @media (min-width: 992px) {
+            padding: 0 4rem;
+            li {
+              min-width: unset;
+            }
+        }
+        &__title {
+            padding-bottom: 7px;
+            margin-right: 1rem;
+            &.is-active, &:hover {
+                border: 2px solid #c01818;
+                opacity: 1 !important;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.products-carousel-tabs__title {
+    &.is-active {
+        h4 {
+            color: #c01818
+        }
+    }
+    border-radius: 8px;
+    border: 1px solid #dbdade;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 16px;
+    align-items: center;
+    justify-content: center;
+    h4 {
+        margin-bottom: unset !important;
+        color: #4b465c;
+    }
+}
+
