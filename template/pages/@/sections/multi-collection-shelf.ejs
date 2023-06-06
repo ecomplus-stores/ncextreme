@@ -9,7 +9,6 @@ if (!link) {
 if (!title) {
   title = 'Escolha por'
 }
-console.log(opt.collection_ids)
 if (opt.collection_ids) {
   const collections = opt.collection_ids
   const promises = []
@@ -61,7 +60,6 @@ if (opt.collection_ids) {
         results.forEach(result => {
           if (result.hits && Array.isArray(result.hits.hits) && result.hits.hits.length) {
             items = result.hits.hits
-            console.log(items)
             if (items && items.length) {
               searchedItemsTabs.push({
                 items
