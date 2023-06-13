@@ -3,12 +3,10 @@
 const footer = _.cms('footer') || {}
 const contacts = _.cms('contacts') || {}
 const themeCustom = _.settings.theme.custom || ''
-const { path } = _.route
-console.log(path)
 %>
 
 
-<footer class="footer <%= path !== '/' ? 'not-home ' : '' %>py-3 py-lg-4 py-xl-5">
+<footer class="footer py-3 py-lg-4 py-xl-5">
   <section id="marketing-footer">
     <div class="container">
       <div class="html-clearfix">

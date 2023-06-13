@@ -896,7 +896,7 @@
         margin-top: 0;
     }
 }
-.footer.not-home {
+body article:not(.page--home) + .footer {
     padding-top: 0;
     border-top: 0;
 }
