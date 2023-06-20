@@ -358,7 +358,9 @@
     }
 }
 
-
+.gallery .glide__bullets {
+    display: none;
+}
 @media(min-width: 992px) {
     .gallery {
         flex-direction: column !important;
@@ -370,7 +372,7 @@
             display: inline-flex !important;
             flex-direction: row !important;
             flex-basis: 77px;
-            margin: 15px 0 0 0;
+            margin: 15px 20px 0 0 !important;
             justify-content: center;
         }
         &__item {
@@ -491,6 +493,7 @@
 .product-card__picture img {
     width: 100%;
     border-radius: 4px;
+    max-height: 100% !important;
 }
 #marketing, #marketing-footer {
     color: #fff;
@@ -913,4 +916,7 @@ body article:not(.page--home) + .footer {
 }
 .footer .collapse {
     display: block;
+}
+.gallery__thumbs {
+    flex: 1 1 100% !important
 }
