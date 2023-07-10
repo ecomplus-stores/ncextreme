@@ -1,6 +1,17 @@
 {
-  "title": "Sobre nós",
-  "meta_title": "Sobre nós",
-  "meta_description": "Sobre nós",
-  "body": "### Lorem ipsum dolor sit amet"
+  "title": "Sobre a NC Extreme",
+  "meta_title": "Sobre a NC Extreme",
+  "meta_description": "Sobre a NC Extreme",
+  "body": "Em 2013 a visão empreendedora de dois irmãos fez surgir um negócio que deveria atender um mercado em constante e acelerado crescimento - a venda de notebooks - que, demandaria uma proteção adequada ao valor investido no equipamento. Por isso a NC teve como primeiro produto fabricado as Cases para Notebook.\n\nComo um mantra para o negócio, a qualidade sempre foi o foco principal destes empreendedores, motivo pelo qual, estes irmãos decidiram fazer as cases com NEOPRENE, um material nobre pela sua resistência e múltiplas funções, o que deu a eles o domínio na manipulação desta matéria prima.\n\nDepois de apostar todas as fichas e serem surpreendidos pelo mercado, se viram na necessidade de inovar, ampliando o horizonte, com a fabricação de produtos em NEOPRENE que atenderiam novos mercados; momento no qual conheceram a demanda fitness.\n\nApoiados então nos pilares da PROTEÇÃO, QUALIDADE e INOVAÇÃO; a NC EXTREME se tornou referência nos itens que fabricam, com o NEOPRENE e outros materiais nobres, totalizando em 2018 mais de 100 diferentes tipos de produtos.\n\nAtualmente, além do mercado de informática, fabrica produtos para os praticantes de esportes, como ciclismo, crossfit, musculação, etc. Nosso mix, também é elogiado na área militar, através dos coldres, como também pelos praticantes de caça e pesca.\n\nSão constantes os elogios espontaneamente feitos pelos consumidores finais de qualquer produto fabricado pela NC EXTREME, o que atesta a acertada conduta de trabalho desta empresa, começando pelas pessoas que compõe a indústria, passando pelos parceiros de negócios: fornecedores, representantes e revendedores; até positivamente alcançaram os consumidores finais.\n\nDesta forma, a NC EXTREME pretende permanecer no constante crescimento que tem alcançado e proporcionado a todos os seus parceiros.\n\n* Missão\n  Fabricar produtos que, com qualidade garantam proteção de forma inovadora.\n* Visão\n  Ser reconhecida no mercado mundial como uma marca que é garantia de satisfação na utilização de seus produtos.\n* Valores\n  Atenção as necessidades do próximo, preocupação com a durabilidade, investimento na inovação.",
+  "sections": [
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "6470ed47a0e875411e9e99cf:brands:NC EXTREME:/nc-extreme",
+      "sort": "sales",
+      "title": "CONFIRA ALGUNS DOS NOSSOS PRODUTOS"
+    }
+  ]
 }
