@@ -8,14 +8,18 @@
       "full_width": true,
       "slides": [
         {
-          "img": "/img/uploads/banner-1.png",
+          "img": "/img/uploads/01-site-oficial.png",
           "link": "",
-          "alt": ""
+          "alt": "",
+          "start": "",
+          "end": ""
         },
         {
           "img": "/img/uploads/banner-2.png",
           "link": "",
-          "alt": ""
+          "alt": "",
+          "start": "",
+          "end": ""
         }
       ]
     },
