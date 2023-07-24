@@ -8,6 +8,11 @@
       "full_width": true,
       "slides": [
         {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-10-off-1-.jpg"
+        },
+        {
           "img": "/img/uploads/banner-duo-face.jpg",
           "link": "https://www.ncextreme.com.br/grip-duo-face",
           "alt": "",
