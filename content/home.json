@@ -1,6 +1,6 @@
 {
   "meta_title": "NC Extreme",
-  "meta_description": "A maior fabricante de artigos esportivos com Neoprene.  Com equipamentos NC Extreme você alcança muito mais, com prevenção, proteção e performance.",
+  "meta_description": "A maior fabricante de artigos esportivos em Neoprene.  Com equipamentos NC Extreme você alcança muito mais, com prevenção, proteção e performance.",
   "sections": [
     {
       "type": "banner-slider",
@@ -11,6 +11,11 @@
           "start": "",
           "end": "",
           "img": "/img/uploads/banner-10-off-1-.jpg"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/artboard-1-1-.png"
         },
         {
           "img": "/img/uploads/banner1.jpg",
