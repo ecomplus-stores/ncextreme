@@ -57,9 +57,9 @@ if (Array.isArray(opt.offers) && opt.offers.length) {
                             itemDataFields.forEach(field => itemData[field] = items[i][field])
                             itemData.name = _.ecomUtils.name(items[i])
                             itemData.price = _.ecomUtils.price(items[i])
+                            itemData.base_price = _.ecomUtils.price(items[i].base_price)
   
                             const imgObj = _.ecomUtils.img(items[i], undefined ,'zoom')
-                            console.log(imgObj)
                             if (imgObj) {
                               itemData.pictures = [{
                                 _id: _.ecomUtils.randomObjectId(),
@@ -122,6 +122,13 @@ if (Array.isArray(opt.offers) && opt.offers.length) {
                                       </div>
                                       <div class="frame-group">
                                         <div class="product-card__prices prices">
+                                          <span class="prices__compare">
+                                            <% if (items[i].available && items[i].visible && _.ecomUtils.inStock(items[i])) { %>
+                                              <%= _.ecomUtils.formatMoney(items[i].base_price) %>
+                                            <% } else { %>
+                                              --
+                                            <% } %>
+                                          </span>
                                           <strong class="prices__value">
                                             <% if (items[i].available && items[i].visible && _.ecomUtils.inStock(items[i])) { %>
                                               <%= _.ecomUtils.formatMoney(itemData.price) %>
@@ -141,14 +148,16 @@ if (Array.isArray(opt.offers) && opt.offers.length) {
                                   </div>
                                 </div>
                                 <% if (imgObj) { %>
-                                  <img 
-                                    class="produto-icon lozad-delay fade" 
-                                    alt="<%= imgObj.alt %>" 
-                                    src="<%= imgObj.url %>"
-                                    <% if (imgObj.url.startsWith('https://ecoms1.com/')) { %>
-                                      crossorigin="anonymous"
-                                    <% } %>
-                                  >
+                                  <a href="/<%= itemData.slug %>">
+                                    <img 
+                                      class="produto-icon lozad-delay fade" 
+                                      alt="<%= imgObj.alt %>" 
+                                      src="<%= imgObj.url %>"
+                                      <% if (imgObj.url.startsWith('https://ecoms1.com/')) { %>
+                                        crossorigin="anonymous"
+                                      <% } %>
+                                    >
+                                  </a>
                                 <% } %>
                               </div>
                             </div>
