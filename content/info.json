@@ -2,12 +2,12 @@
   "shipping": {
     "show": true,
     "title": "FRETE GRÁTIS",
-    "text": "ACIMA DE 399"
+    "text": "ACIMA DE R$199"
   },
   "installments": {
     "show": true,
     "title": "PARCELE SEM JUROS",
-    "text": "EM ATÉ 3X NO CARTÃO"
+    "text": "EM ATÉ 4X NO CARTÃO"
   },
   "exchange": {
     "show": true,
