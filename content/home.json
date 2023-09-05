@@ -10,21 +10,23 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/artboard-1-1-.png"
+          "img": "/img/uploads/04.jpg",
+          "mobile_img": "/img/uploads/02.jpg",
+          "link": "https://www.ncextreme.com.br/grip-duo-face"
         },
         {
-          "img": "/img/uploads/banner1.jpg",
-          "link": "https://www.ncextreme.com.br/grip-duo-face",
-          "alt": "",
           "start": "",
-          "end": ""
+          "end": "",
+          "img": "/img/uploads/03.jpg",
+          "mobile_img": "/img/uploads/01.jpg",
+          "link": "https://www.ncextreme.com.br/grip-duo-face"
         },
         {
-          "img": "/img/uploads/banner2.jpg",
-          "link": "https://www.ncextreme.com.br/grip-revolution",
-          "alt": "",
           "start": "",
-          "end": ""
+          "end": "",
+          "img": "/img/uploads/05.jpg",
+          "mobile_img": "/img/uploads/06.jpg",
+          "link": "https://www.ncextreme.com.br/grip-duo-face"
         }
       ]
     },
