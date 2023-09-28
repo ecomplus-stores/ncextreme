@@ -46,8 +46,8 @@
       "type": "offers-timer",
       "max_hours": 24,
       "img": "/img/uploads/parahome.png",
-      "start": "2023-08-16T19:38:07.254Z",
-      "end": "2023-10-11T02:59:34.359Z",
+      "start": "",
+      "end": "2023-09-06T18:52:54.572Z",
       "offers": [
         "6511e1412cd6b659595ceaa7"
       ],
