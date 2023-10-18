@@ -5,6 +5,20 @@
     {
       "type": "banner-slider",
       "autoplay": 9000,
+      "full_width": false,
+      "slides": [
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/01-desck.png",
+          "mobile_img": "/img/uploads/01-mobile.png",
+          "link": "https://www.ncextreme.com.br/joelheira-alta-perf.-7mm-c348"
+        }
+      ]
+    },
+    {
+      "type": "banner-slider",
+      "autoplay": 9000,
       "full_width": true,
       "slides": [
         {
