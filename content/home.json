@@ -76,12 +76,21 @@
     {
       "type": "collection-shelf",
       "shuffle": false,
-      "collection_id": null,
+      "collection_id": "651ad7eb2cd6b65959671f99:categories:Masculino:/masculino",
       "sort": "sales",
-      "title": "Mais vendidos",
+      "title": "Masculino",
       "headless": false,
       "limit": 12,
       "page": 1
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "65204b672cd6b659596f5c38:categories:Feminino:/feminino",
+      "sort": "sales",
+      "title": "Feminino"
     },
     {
       "type": "multi-collection-shelf",
