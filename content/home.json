@@ -43,10 +43,10 @@
     },
     {
       "type": "offers-timer",
-      "max_hours": 25,
+      "max_hours": 27,
       "img": "/img/uploads/esquenta-blackprancheta-1-copiar.png",
       "start": "",
-      "end": "2023-11-01T13:51:21.137Z",
+      "end": "2023-10-24T13:51:21.137Z",
       "offers": [
         "653140732cd6b65959816f02"
       ],
