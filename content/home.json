@@ -57,13 +57,16 @@
       "banners": [
         {
           "link": "https://www.ncextreme.com.br/esportes",
-          "img": "/img/uploads/untitled-1artboard-1_easy-resize.com.jpg"
+          "img": "/img/uploads/untitled-1artboard-1_easy-resize.com.jpg",
+          "mobile_img": "/img/uploads/untitled-1artboard-1-copy-4.png"
         },
         {
-          "img": "/img/uploads/untitled-1artboard-1-copy_easy-resize.com.jpg"
+          "img": "/img/uploads/untitled-1artboard-1-copy_easy-resize.com.jpg",
+          "mobile_img": "/img/uploads/untitled-1artboard-1-copy-5.png"
         },
         {
-          "img": "/img/uploads/untitled-1artboard-1-copy-2_easy-resize.com.jpg"
+          "img": "/img/uploads/untitled-1artboard-1-copy-2_easy-resize.com.jpg",
+          "mobile_img": "/img/uploads/untitled-1artboard-1-copy-6.png"
         }
       ]
     },
