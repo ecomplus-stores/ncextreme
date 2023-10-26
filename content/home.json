@@ -72,10 +72,6 @@
       "page": 1
     },
     {
-      "type": "marketing",
-      "enabled": true
-    },
-    {
       "type": "collection-shelf",
       "shuffle": false,
       "collection_id": "651ad7eb2cd6b65959671f99:categories:Masculino:/masculino",
