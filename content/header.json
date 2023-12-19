@@ -23,10 +23,10 @@
   },
   "categories_list": {
     "featured": [
+      "/acessorios?ACESSÓRIOS",
       "/masculino?Masculino",
       "/feminino?Feminino",
-      "/esportes?Esportes",
-      "/acessorios?ACESSÓRIOS"
+      "/esportes?Esportes"
     ],
     "random": 0,
     "full_width": true
