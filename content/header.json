@@ -25,7 +25,8 @@
     "featured": [
       "/masculino?Masculino",
       "/feminino?Feminino",
-      "/esportes?Esportes"
+      "/esportes?Esportes",
+      "/acessorios?ACESSÓRIOS"
     ],
     "random": 0,
     "full_width": true
