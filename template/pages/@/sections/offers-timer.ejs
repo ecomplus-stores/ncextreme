@@ -59,7 +59,7 @@ if (Array.isArray(opt.offers) && opt.offers.length) {
                             itemData.price = _.ecomUtils.price(items[i])
                             itemData.base_price = _.ecomUtils.price(items[i].base_price)
   
-                            const imgObj = _.ecomUtils.img(items[i], undefined ,'zoom')
+                            const imgObj = _.ecomUtils.img(items[i], undefined ,'zoom') || _.ecomUtils.img(items[i], undefined ,'normal')
                             if (imgObj) {
                               itemData.pictures = [{
                                 _id: _.ecomUtils.randomObjectId(),
