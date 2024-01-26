@@ -921,3 +921,8 @@ body article:not(.page--home) + .footer {
 .gallery__thumbs {
     flex: 1 1 100% !important
 }
+@media(max-width: 767px) {
+    .banner a {
+        min-height: unset !important;
+    }
+}

@@ -10,21 +10,29 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/artboard-1-1-.png"
+          "img": "/img/uploads/tfyghbjknl.png",
+          "mobile_img": "/img/uploads/l1l1l1l1.png"
         },
         {
-          "img": "/img/uploads/banner1.jpg",
-          "link": "https://www.ncextreme.com.br/grip-duo-face",
-          "alt": "",
           "start": "",
-          "end": ""
+          "end": "",
+          "img": "/img/uploads/whatsapp-image-2023-10-18-at-10.59.15-4-.jpeg",
+          "mobile_img": "/img/uploads/whatsapp-image-2023-10-18-at-10.59.15-5-.jpeg",
+          "link": "https://www.ncextreme.com.br/joelheira-alta-perf.-7mm-c179"
         },
         {
-          "img": "/img/uploads/banner2.jpg",
-          "link": "https://www.ncextreme.com.br/grip-revolution",
-          "alt": "",
           "start": "",
-          "end": ""
+          "end": "",
+          "img": "/img/uploads/whatsapp-image-2023-10-18-at-10.59.15-1-.jpeg",
+          "mobile_img": "/img/uploads/whatsapp-image-2023-10-18-at-10.59.15.jpeg",
+          "link": "https://www.ncextreme.com.br/top-speed"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/whatsapp-image-2023-10-18-at-10.59.15-2-.jpeg",
+          "mobile_img": "/img/uploads/whatsapp-image-2023-10-18-at-10.59.15-3-.jpeg",
+          "link": "https://www.ncextreme.com.br/bermuda-dois-em-um-masc-caveira"
         }
       ]
     },
@@ -34,18 +42,38 @@
     },
     {
       "type": "offers-timer",
-      "max_hours": 24,
-      "img": "/img/uploads/nc-banner.png",
-      "start": "2023-08-16T19:38:07.254Z",
-      "end": "2023-08-17T16:00:34.359Z",
+      "max_hours": 27,
+      "img": "/img/uploads/s-b-mnm-x.png",
+      "start": "",
+      "end": "2023-10-24T13:51:21.137Z",
       "offers": [
-        "64a87d6e5e60690370596d6f"
+        "653140732cd6b65959816f02"
       ],
-      "notes": "Liquida já"
+      "notes": "Esquenta Black November: Joelheira 7mm +\u0003Munhequeira Elástica"
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "link": "https://www.ncextreme.com.br/musculacao",
+          "img": "/img/uploads/untitled-1artboard-1_easy-resize.com.jpg",
+          "mobile_img": "/img/uploads/untitled-1artboard-1-copy-4.png"
+        },
+        {
+          "img": "/img/uploads/untitled-1artboard-1-copy_easy-resize.com.jpg",
+          "mobile_img": "/img/uploads/untitled-1artboard-1-copy-5.png",
+          "link": "https://www.ncextreme.com.br/cross"
+        },
+        {
+          "img": "/img/uploads/untitled-1artboard-1-copy-2_easy-resize.com.jpg",
+          "mobile_img": "/img/uploads/untitled-1artboard-1-copy-6.png",
+          "link": "https://www.ncextreme.com.br/fitness"
+        }
+      ]
     },
     {
       "type": "collection-shelf",
-      "shuffle": true,
+      "shuffle": false,
       "collection_id": null,
       "sort": "sales",
       "title": "Mais Vendidos",
@@ -54,18 +82,23 @@
       "page": 1
     },
     {
-      "type": "marketing",
-      "enabled": true
-    },
-    {
       "type": "collection-shelf",
-      "shuffle": true,
-      "collection_id": null,
+      "shuffle": false,
+      "collection_id": "651ad7eb2cd6b65959671f99:categories:Masculino:/masculino",
       "sort": "news",
-      "title": "Mais Vistos",
+      "title": "Masculino",
       "headless": false,
       "limit": 12,
       "page": 1
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "65204b672cd6b659596f5c38:categories:Feminino:/feminino",
+      "sort": "news",
+      "title": "Feminino"
     },
     {
       "type": "multi-collection-shelf",

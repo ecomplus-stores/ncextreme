@@ -2,7 +2,7 @@
   "shipping": {
     "show": true,
     "title": "FRETE GRÁTIS",
-    "text": "ACIMA DE R$199"
+    "text": "ACIMA DE R$249"
   },
   "installments": {
     "show": true,
@@ -16,7 +16,7 @@
   },
   "promo": {
     "show": true,
-    "title": "PAGUE COM PIX",
-    "text": "5% DE DESCONTO"
+    "title": "",
+    "text": ""
   }
 }

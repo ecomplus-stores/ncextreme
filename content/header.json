@@ -1,6 +1,6 @@
 {
   "marketing_stripe": {
-    "text": "5% DE DESCONTO",
+    "text": "",
     "link": ""
   },
   "contacts_stripe": {
@@ -22,12 +22,17 @@
     "socials": false
   },
   "categories_list": {
-    "featured": [],
-    "random": 6,
+    "featured": [
+      "/acessorios?ACESSÓRIOS",
+      "/masculino?Masculino",
+      "/feminino?Feminino",
+      "/esportes?Esportes"
+    ],
+    "random": 0,
     "full_width": true
   },
   "desktop_megamenu": true,
   "search_input": true,
-  "alphabetical_order_submenu": false,
+  "alphabetical_order_submenu": true,
   "full_width_submenu": false
 }
