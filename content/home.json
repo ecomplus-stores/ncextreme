@@ -10,15 +10,13 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-1-.png",
-          "link": "https://www.ncextreme.com.br/grip-duo-face",
-          "mobile_img": "/img/uploads/duo-face-mobile.png"
+          "img": "/img/uploads/banner-ferias-clean.png",
+          "mobile_img": "/img/uploads/capa-site-mobile.png"
         },
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-ferias-clean.png",
-          "mobile_img": "/img/uploads/capa-site-mobile.png"
+          "img": "/img/uploads/banner.png"
         }
       ]
     },
