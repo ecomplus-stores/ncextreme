@@ -25,7 +25,7 @@
     },
     {
       "type": "offers-timer",
-      "max_hours": 27,
+      "max_hours": 21,
       "img": "/img/uploads/s-b-mnm-x.png",
       "start": "",
       "end": "2024-12-31T13:51:21.137Z",
