@@ -20,6 +20,18 @@
           "img": "/img/uploads/banner-black-4.png",
           "mobile_img": "/img/uploads/capa-site-mobile-2.png",
           "link": "https://www.ncextreme.com.br/joelheira-7mm--cinturao"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-black-3-cueca.png",
+          "mobile_img": "/img/uploads/cueca.png"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/thin-joelheira.png",
+          "mobile_img": "/img/uploads/thin.png"
         }
       ]
     },
