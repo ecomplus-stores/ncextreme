@@ -66,7 +66,7 @@
       "type": "collection-shelf",
       "shuffle": false,
       "collection_id": null,
-      "sort": "sales",
+      "sort": "news",
       "title": "Mais Vendidos",
       "headless": false,
       "limit": 12,
