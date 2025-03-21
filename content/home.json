@@ -10,6 +10,12 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/camisa-manga-longa-uv.png",
+          "mobile_img": "/img/uploads/camisa-manga-longa-capa-site-nc-mobile-1-.png"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/1736944777_3257eba70d87aa742e48.png.png",
           "link": "https://www.ncextreme.com.br/grip-duo-face",
           "mobile_img": "/img/uploads/1736944777_3257eba70d87aa742e48.png.png"
@@ -18,12 +24,6 @@
           "start": "",
           "end": "",
           "img": "/img/uploads/capa-site-nc-janeiro-2024-2-cotoveleira-2-1-.png"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/camisa-manga-longa-uv.png",
-          "mobile_img": "/img/uploads/camisa-manga-longa-capa-site-nc-mobile-1-.png"
         }
       ]
     },
