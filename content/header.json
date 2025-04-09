@@ -26,7 +26,8 @@
       "/acessorios?ACESSÓRIOS",
       "/masculino?Masculino",
       "/feminino?Feminino",
-      "/esportes?Esportes"
+      "/esportes?Esportes",
+      "/pages/seja-um-revendedor?Revendedor"
     ],
     "random": 0,
     "full_width": true
