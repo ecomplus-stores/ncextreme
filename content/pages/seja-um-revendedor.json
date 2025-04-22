@@ -19,7 +19,8 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/mapa-de-revendedores-min.jpg"
+          "img": "/img/uploads/mapa-de-revendedores-min.jpg",
+          "mobile_img": "/img/uploads/mapa-de-revendedores-min.jpg"
         }
       ]
     }
