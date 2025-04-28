@@ -926,6 +926,12 @@ body article:not(.page--home) + .footer {
         min-height: unset !important;
     }
 }
+.header__categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #cd-revendedor {
-  margin-left: auto;
+  order: 2; /* joga ele pro final */
 }
