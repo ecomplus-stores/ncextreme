@@ -926,12 +926,18 @@ body article:not(.page--home) + .footer {
         min-height: unset !important;
     }
 }
-.header__categories {
+.header__category-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.header__categories {
+  display: flex;
+  gap: 20px; /* espaço entre os itens */
+  flex: 1;
+}
+
 #cd-revendedor {
-  order: 2; /* joga ele pro final */
+  margin-left: auto;
 }
