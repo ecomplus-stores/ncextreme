@@ -16,7 +16,8 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/banner-site-3-.jpg"
+          "img": "/img/uploads/banner-site-3-.jpg",
+          "mobile_img": "/img/uploads/capa-site-mobile23.jpg"
         }
       ]
     },
