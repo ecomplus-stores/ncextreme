@@ -1,9 +1,9 @@
 {
   "domain": "ncextreme.netlify.app",
   "currency_symbol": "R$",
-  "primary_color": "#222831",
+  "primary_color": "",
   "theme": {
-    "bootswatch": "yeti",
+    "bootswatch": "solar",
     "custom": "_"
   },
   "bg_color": "#ffffff",
