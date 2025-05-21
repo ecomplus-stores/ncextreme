@@ -10,6 +10,12 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/banner-site-azul-1-.jpg",
+          "mobile_img": "/img/uploads/capa-site-mobile-verde.jpg"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/banner-site-amarelo-1-.jpg",
           "mobile_img": "/img/uploads/capa-site-mobile-amarelo-1-.jpg",
           "link": "https://www.ncextreme.com.br/camiseta-granada?variation_id=919040174739884121000010"
