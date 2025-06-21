@@ -114,6 +114,12 @@
       "headless": false,
       "limit": 12,
       "page": 1
+    },
+    {
+      "type": "responsive-banner",
+      "img": "/img/uploads/grip-dua-face.png",
+      "link": "https://www.ncextreme.com.br/grip-duo-face",
+      "mobile_img": "/img/uploads/grip-dua-face.png"
     }
   ]
 }
