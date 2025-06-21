@@ -65,10 +65,8 @@
       ]
     },
     {
-      "type": "responsive-banner",
-      "img": "/img/uploads/grip-dua-face.png",
-      "link": "https://www.ncextreme.com.br/grip-duo-face",
-      "mobile_img": "/img/uploads/grip-dua-face.png"
+      "type": "custom-content",
+      "markdown": "<!--StartFragment-->\n\n.quantity-selector__btn-container {\n\nmin-width: 400pxpx !important;\n\n}\n\n.discount-tag-price{\n\ndisplay: none !important;\n\n}\n\n\\#product-actions .shipping-calculator{\n\ndisplay: none !important;\n\n}\n\n.n-sei-cep{\n\ndisplay: none !important;\n\n}\n\n\\#tag-frete{\n\ndisplay: none !important;\n\n}\n\n.product-card {\n\nheight: 420px;\n\ndisplay: flex;\n\nflex-direction: column;\n\njustify-content: flex-start;\n\npadding: 10px;\n\n}\n\n.product-card__picture {\n\nflex: 1 1 auto;\n\nheight: 700px; /\\* imagem maior \\*/\n\noverflow: hidden;\n\n}\n\n.product-card__picture img {\n\nwidth: 100%;\n\nheight: 100%;\n\nobject-fit: cover;\n\n}\n\n.product-card__name{\n\nfont-size: 14px;\n\nmargin-top: 8px;\n\n}\n\n.product-card__prices{\n\nfont-size: 13px !important;\n\ncolor: #444;\n\nmargin-top: 4px;\n\n}\n\n.product-card__buy {\n\ntext-align: center;\n\n}\n\n@media (max-width: 768px) {\n\n.product-card {\n\nheight: 420px;\n\n}\n\n.product-card__picture {\n\nheight: 240px !important;\n\n}\n\n.product-card__name {\n\nfont-size: 13px !important;\n\n}\n\n.product-card__prices {\n\nfont-size: 12px !important;\n\n}\n\n}\n\n.button-comprar:hover {\n\nbackground-color: #000000; /\\* preto \\*/\n\ncolor: #ffffff; /\\* branco para o texto \\*/\n\n}\n\n<!--EndFragment-->"
     },
     {
       "type": "collection-shelf",
