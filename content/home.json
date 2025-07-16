@@ -10,6 +10,11 @@
         {
           "start": "",
           "end": "",
+          "img": "/img/uploads/duo-face.png"
+        },
+        {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/corta-vento.png",
           "mobile_img": "/img/uploads/capa-site-mobile23.jpg"
         },
@@ -31,11 +36,6 @@
           "img": "/img/uploads/banner-site-verde.png",
           "mobile_img": "/img/uploads/capa-site-mobile-amarelo-1-.jpg",
           "link": "https://www.ncextreme.com.br/camiseta-granada?variation_id=919040174739884121000010"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/duo-face.png"
         }
       ]
     },
